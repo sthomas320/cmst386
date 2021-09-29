@@ -1,0 +1,72 @@
+body {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  background-color: cadetblue;
+	  width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+}
+header {
+  	color: white;
+	 height: auto;
+  
+}
+nav {
+  overflow: hidden;
+  background-color: black;
+	  
+}
+nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h2, h3, h4, h5, h6 {
+  font-size: 18pt;
+}
+article {
+  background-color: white;
+}
+footer, hr {
+  color: black;
+  text-align: center;
+ clear: both;
+}
+figure.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: auto;
+  background-color: white;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
