@@ -10,6 +10,9 @@ header {
 	 height: auto;
   
 }
+ul {
+	list-style: armenian;
+}
 nav {
   overflow: hidden;
   background-color: black;
