@@ -1,0 +1,32 @@
+// main.scss
+
+$bg-color: black;
+$txt-color: white;
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+h1, h2
+{ font-family: "Sora", sans-serif;}
+
+footer { text-align: center;}
+
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 2px;
+  color: black;
+  content: "/ ";
+}
+
+ul.breadcrumb li a {
+  color: cadetblue;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+// grid.scss
+@use 'main';
+
+.section1 { grid-area: header; }
+.section2 { grid-area: menu; }
+.section3 { grid-area: main; }
+.section4 { grid-area: right; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu main main main right right";
+  grid-gap: 1px;
+  padding: 3px;
+}
+
+  .topnav {
+  overflow: hidden;
+  background-color: main.$bg-color;
+  position: relative;
+	color: main.$txt-color;
+}
+
+
+.topnav #links {
+  display: none;
+}
+
+
+.topnav a {
+  color: main.$txt-color;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.topnav a.icon {
+  background: main.$bg-color;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+

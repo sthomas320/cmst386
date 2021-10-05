@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CMST 386 Project 3</title>
+<link href="build/style.css" rel="stylesheet" type="text/css">
+<!-- How I implemented SASS: I the command line interface to convert my SCSS files to CSS and then edited the resulting file to ensure it worked correctly. I took advnatage of SASS variables for the black and white color scheme which is often reused.  -->
+<meta name="description" content="CSS preprocessing overview">
+<meta name="keywords" content="SCSS, HTML, CSS, SASS, Learn, Design">
+<meta name="author" content="Spencer Thomas">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="grid-container">
+  <div class="section1">
+    <nav class="topnav">
+      <h1>Project 3: Responsive Design and CSS Preprocessor</h1>
+      <div id="links"> <a href="../index.html">Home</a> <a href="project3.html">Project 3</a> </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a> </nav>
+    <script>
+      function myFunction() {
+  var x = document.getElementById("links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script> 
+  </div>
+  <div class="section3">
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="project3.html">Home</a></li>
+      <li>Learn Preprocessing</li>
+    </ul>
+    <h2>Ways to Implement Preprocessing</h2>
+    <p>CSS preprocessing can be implemented through the use of either LESS or SASS. LESS and SASS are used to make stylesheets more organized and easier to navigate on the client side. This is accomplished through the use of variables, mixins, and nesting. Both LESS and SASS can be deployed to a staging server to see updates right away. </p>
+  </div>
+  <div class="section4">
+    <h2>Mechanisms of SASS</h2>
+    <ul>
+      <li>Variables in SASS are a way to store information (in this case CSS values) that can then be used throughout the stylesheet. The symbol $ makes something a variable. </li>
+      <li>Nesting in SASS allows CSS selectors to follow a similarly nested heiarchy to that of HTML. Selectors can be nested inside other selectors.</li>
+      <li>Mixins in SASS are similar to variables in that they are CSS declarations which can be written once and then reused by calling the mixin.</li>
+      <li>Operators in SASS allow use of simple math operations within CSS in order to calculate different values to be used in the resulting stylesheet.</li>
+    </ul>
+  </div>
+  <button onclick="topFunction()" id="toTop" title="Go to top">Go to Top</button>
+  <script>
+          var mybutton = document.getElementById("toTop");
+          
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+	</script> 
+</div>
+<footer>
+  <hr>
+  <a href="../index.html"> Home </a><a href="project3.html"> Project 3 </a> </footer>
+</body>
+</html>
