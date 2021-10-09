@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+nav, h2{
+	  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	margin-right: 10px;
+	float: right;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 10px;
+}
+
+
+footer {
+  text-align: center;
+}
+.section1 {
+  grid-area: header;
+}
+
+.section2 {
+  grid-area: main;
+}
+.section3 {
+  grid-area: right;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-areas: "header header header header header header"
+	  "main main main right right right";
+  grid-gap: 1px;
+  padding: 3px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-areas: "header header header header header header"
+	  "main main main main main main";
+  grid-gap: 1px;
+  padding: 3px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #87A23D;
+  position: relative;
+}
+
+.topnav #links {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+	transition:  color 1s, transform 2s
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  color: #445626;
+transform: rotate(2deg);
+	
+	
+}
+
+.hero {
+  background-image: url("../images/hero.jpg");
+	height: 805px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
+
+}
+
+.herotext {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+	text-shadow: 2px 2px 5px black;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.gcse-search {
+	floar: left;
+	widtyh: 50%;
+}
+ 
+p { color: black}
